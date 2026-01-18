@@ -79,7 +79,7 @@ export default function Card({ item }) {
                 )}
 
                 {/* View Details Button */}
-                <Link href={`/books/${item._id}`}>
+                <Link href={`/Books/${item._id}`}>
                     <button
                         className="w-full py-3 rounded-lg bg-linear-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 text-indigo-300 font-medium hover:bg-linear-to-r hover:from-indigo-500/30 hover:to-purple-500/30 hover:border-indigo-500/50 hover:text-white transition-all duration-300 group-hover:scale-[1.02]"
                     >
