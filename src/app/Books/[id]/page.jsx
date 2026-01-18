@@ -36,13 +36,13 @@ const Page = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/books/${id}`);
+                const response = await fetch(`https://e-reads-server-side.vercel.app/books/${id}`);
                 const data = await response.json();
                 setItem(data);
                 
                 // Check if user already purchased this book
                 if (user) {
-                    const ordersResponse = await fetch(`http://localhost:5000/orders?email=${user.emailAddresses[0]?.emailAddress}`);
+                    const ordersResponse = await fetch(`https://e-reads-server-side.vercel.app/orders?email=${user.emailAddresses[0]?.emailAddress}`);
                     const orders = await ordersResponse.json();
                     const hasPurchased = orders.some(order => order.bookId === id);
                     setIsPurchased(hasPurchased);
@@ -86,7 +86,7 @@ const Page = () => {
         }
 
         try {
-            const response = await fetch("http://localhost:5000/orders", {
+            const response = await fetch("https://e-reads-server-side.vercel.app/orders", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(orderData),

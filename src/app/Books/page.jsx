@@ -33,7 +33,7 @@ const Page = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch('http://localhost:5000/books')
+    fetch('https://e-reads-server-side.vercel.app/books')
       .then(res => res.json())
       .then(data => {
         setItems(data);

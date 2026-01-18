@@ -27,7 +27,7 @@ const Page = () => {
     useEffect(() => {
         if (!user) return
         setLoading(true)
-        fetch(`http://localhost:5000/orders?email=${user?.emailAddresses[0]?.emailAddress}`)
+        fetch(`https://e-reads-server-side.vercel.app/orders?email=${user?.emailAddresses[0]?.emailAddress}`)
             .then(res => res.json())
             .then(data => {
                 // Filter out non-book orders and format the data

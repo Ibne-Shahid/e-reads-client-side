@@ -16,7 +16,6 @@ import {
     Calendar,
     Tag,
     User,
-    MoreVertical,
     BarChart3,
     AlertCircle
 } from "lucide-react";
@@ -35,7 +34,7 @@ const ManagebooksPage = () => {
         async function fetchBooks() {
             try {
                 setLoading(true);
-                const res = await fetch(`http://localhost:5000/books?email=${email}`);
+                const res = await fetch(`https://e-reads-server-side.vercel.app/books?email=${email}`);
                 const data = await res.json();
                 setBooks(data);
             } catch (error) {
@@ -59,7 +58,7 @@ const ManagebooksPage = () => {
         if (!confirmed) return;
 
         try {
-            const res = await fetch(`http://localhost:5000/books/${id}`, { method: "DELETE" });
+            const res = await fetch(`https://e-reads-server-side.vercel.app/books/${id}`, { method: "DELETE" });
 
             if (res.ok) {
                 setBooks((prev) => prev.filter((item) => item._id !== id));

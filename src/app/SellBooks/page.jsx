@@ -36,7 +36,7 @@ const Page = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/books", {
+      const response = await fetch("https://e-reads-server-side.vercel.app/books", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newBook),
