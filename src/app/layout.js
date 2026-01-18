@@ -27,7 +27,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider publishableKey="pk_test_ZW1lcmdpbmctZW11LTM1LmNsZXJrLmFjY291bnRzLmRldiQ">
+    <ClerkProvider publishableKey="pk_test_a2luZC1sZWVjaC04NS5jbGVyay5hY2NvdW50cy5kZXYk">
       <html lang="en" data-theme="restaurant">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
