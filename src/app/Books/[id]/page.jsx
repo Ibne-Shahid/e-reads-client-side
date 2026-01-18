@@ -160,30 +160,6 @@ const Page = () => {
                 <div className="absolute bottom-0 right-10 w-96 h-96 bg-indigo-500/5 rounded-full blur-3xl"></div>
             </div>
 
-            {isLoaded && !user && (
-                <>
-                    <div className="absolute inset-0 backdrop-blur-lg bg-black/60 z-20"></div>
-                    <div className="absolute inset-0 flex items-center justify-center z-30">
-                        <div className="bg-gray-800/80 backdrop-blur-sm border border-gray-700 p-8 rounded-2xl shadow-2xl max-w-md text-center">
-                            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-linear-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
-                                <BookOpen className="h-8 w-8 text-white" />
-                            </div>
-                            <h2 className="text-2xl font-bold mb-4 text-white">
-                                Sign In Required
-                            </h2>
-                            <p className="text-gray-300 mb-6">
-                                Please sign in to view book details and make purchases.
-                            </p>
-                            <Link href="/sign-in">
-                                <Button className="px-8 py-3 rounded-xl bg-linear-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold transition-all duration-300">
-                                    Sign In to Continue
-                                </Button>
-                            </Link>
-                        </div>
-                    </div>
-                </>
-            )}
-
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 {/* Header with Book Cover */}
                 <div className="relative bg-linear-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-3xl overflow-hidden mb-8">
