@@ -5,24 +5,24 @@
 </p>
 
 
-A community-driven marketplace where anyone can sell and buy homemade foods. TasteHouse connects home chefs with food lovers looking for fresh, authentic, and homemade dishes.
+A modern digital marketplace for buying and selling e-books. E-Reads connects authors with readers worldwide, making digital literature accessible, affordable, and sustainable.
 
 ---
 
 ## 🌐 Live Demo
-👉 **[Live Demo Link](https://taste-house-client-side.vercel.app/)**  
+👉 **[Live Demo Link](https://e-books-client-side.vercel.app/)**  
 
 ---
 
 ## ✨ Features
-- 🏠 User-friendly platform for buying & selling homemade food  
-- 🔐 Secure authentication powered by Clerk  
-- 🛒 Add, manage, and purchase food items easily  
-- 🔍 Search & filter homemade dishes  
-- 📦 Order management for sellers  
-- 🌙 Clean UI styled with TailwindCSS + DaisyUI  
-- 📡 Real-time operations with MongoDB & Next.js API routes  
 
+- 🔐 Secure authentication with Clerk
+- 📚 Buy and sell e-books
+- 🔍 Search and filter books
+- 🛒 Add to cart and purchase
+- 📊 Manage your published books
+- 📱 Responsive design
+- 
 ---
 
 ## 🚀 Technologies Used
@@ -35,7 +35,6 @@ A community-driven marketplace where anyone can sell and buy homemade foods. Tas
 - DaisyUI  
 - React Icons  
 - React Toastify  
-- MongoDB  
 
 ### **Backend (Server)**
 - Express.js  
@@ -47,11 +46,11 @@ A community-driven marketplace where anyone can sell and buy homemade foods. Tas
 
 ## 💻 Local Setup
 
-Follow these steps to run **TasteHouse** locally:
+Follow these steps to run **E-Reads** locally:
 
 1. **Clone the repository** </br>
 git clone (your-repo-url) </br>
-cd taste-house-client-side
+cd e-reads-client-side
 
 2. **Install dependencies and start development server** </br>
 npm install
