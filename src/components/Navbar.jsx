@@ -80,28 +80,28 @@ export default function Navbar() {
                                         {dropdownOpen && (
                                             <div className="absolute right-0 mt-2 w-48 bg-gray-800 border border-gray-700 rounded-lg shadow-xl py-2 z-50">
                                                 <Link
-                                                    href="/profile"
+                                                    href="/user-profile"
                                                     className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
                                                     onClick={() => setDropdownOpen(false)}
                                                 >
                                                     Profile
                                                 </Link>
                                                 <Link
-                                                    href="/profile"
+                                                    href="/SellBooks"
                                                     className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
                                                     onClick={() => setDropdownOpen(false)}
                                                 >
                                                     Sell Books
                                                 </Link>
                                                 <Link
-                                                    href="/my-books"
+                                                    href="/ManageBooks"
                                                     className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
                                                     onClick={() => setDropdownOpen(false)}
                                                 >
                                                     Manage Books
                                                 </Link>
                                                 <Link
-                                                    href="/wishlist"
+                                                    href="/MyBooks"
                                                     className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
                                                     onClick={() => setDropdownOpen(false)}
                                                 >
@@ -176,32 +176,31 @@ export default function Navbar() {
                             {isSignedIn ? (
                                 <>
                                     <Link
-                                        href="/my-books"
+                                        href="/MyBooks"
                                         className="flex items-center space-x-3 px-4 py-3 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
                                         onClick={() => setMobileOpen(false)}
                                     >
                                         <span>My Books</span>
                                     </Link>
                                     <Link
-                                        href="/my-books"
+                                        href="/SellBooks"
                                         className="flex items-center space-x-3 px-4 py-3 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
                                         onClick={() => setMobileOpen(false)}
                                     >
                                         <span>Sell Books</span>
                                     </Link>
                                     <Link
-                                        href="/my-books"
+                                        href="/ManageBooks"
                                         className="flex items-center space-x-3 px-4 py-3 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
                                         onClick={() => setMobileOpen(false)}
                                     >
                                         <span>Manage Books</span>
                                     </Link>
                                     <Link
-                                        href="/profile"
+                                        href="/user-profile"
                                         className="flex items-center space-x-3 px-4 py-3 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors"
                                         onClick={() => setMobileOpen(false)}
                                     >
-                                        <span className="text-lg">👤</span>
                                         <span>Profile</span>
                                     </Link>
                                     <div className="px-4 py-3">

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "E-Books",
+  title: "E-Reads",
   description: "Find ypur desired book or sell!",
   icons: {
     icon: "https://img.icons8.com/?size=100&id=113802&format=png&color=000000",
