@@ -2,7 +2,7 @@
 import Banner from '@/components/Banner'
 import HowItWorks from '@/components/HowItWorks';
 import CustomerTestimonials from '@/components/Testimonials';
-import TopFoods from '@/components/TopFoods';
+import TopFoods from '@/components/TopBooks';
 import WhyChoose from '@/components/WhyChoose';
 
 export default function Home() {
