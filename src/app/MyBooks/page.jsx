@@ -6,14 +6,11 @@ import {
     BookOpen, 
     DollarSign, 
     Mail, 
-    Download, 
     Star, 
     Filter,
     Search,
     ChevronDown,
-    Clock,
     Tag,
-    User,
     TrendingUp,
     BarChart3
 } from 'lucide-react'
@@ -328,12 +325,6 @@ const Page = () => {
                                     >
                                         View Details
                                     </Link>
-                                    <button 
-                                        className="px-4 py-2 rounded-lg bg-gray-800/50 border border-gray-700 hover:border-green-500/50 text-gray-300 hover:text-green-400 transition-all duration-300"
-                                        onClick={() => alert(`Downloading ${order.bookTitle}`)}
-                                    >
-                                        <Download className="h-4 w-4" />
-                                    </button>
                                 </div>
                             </div>
                         </div>
