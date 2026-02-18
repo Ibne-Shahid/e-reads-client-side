@@ -22,7 +22,6 @@ A modern digital marketplace for buying and selling e-books. E-Reads connects au
 - 🛒 Add to cart and purchase
 - 📊 Manage your published books
 - 📱 Responsive design
-- 
 ---
 
 ## 🚀 Technologies Used
